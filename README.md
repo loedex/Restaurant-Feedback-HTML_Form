@@ -39,17 +39,5 @@ This is a simple HTML-based **Restaurant Feedback Form** designed for **Lintott'
 2. Open the `index.html` file in your web browser.
 3. Fill in the form and hit **Submit** to simulate submission.
 
----
-
----
-
-## 📂 File Structure
-
-📁 project-root
-│
-├── index.html      # Main HTML file
-├── Icons/          # Folder (assumed) containing the logo "b.ico"
-└── README.md       # This file
-
 ## NOTE: This project is for educational/demo purposes just for practicing HTML tags for designing properly structured layout. 
 

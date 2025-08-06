@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Feedback Form</title>
+</head>
+
+<body>
+  <div id="home">
+    <header>
+      <a href="index.html">
+        <img src="/Icons/b.ico" alt="Lintott's Restaurant Logo" />
+      </a>
+      <h1>
+        Lintott's Restaurant
+        <span><small>- share your experience</small></span>
+      </h1>
+    </header>
+    <p>Your feedback helps us serve you better</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#info">Personal Info.</a>
+      <a href="#Feedback">Feedback</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div>
+    <article>
+      <h2>About the Survey:</h2>
+      <p>
+        <b>Purpose of Survey: </b>This quick survey helps us improve our food,
+        service, and your overall experience
+      </p>
+      <p><b>Time to complete: </b>Takes less than 2 minutes</p>
+      <p>
+        <b>Confidentiality: </b>Your information will remain confidential and
+        will only be used for quality improvement.
+      </p>
+    </article>
+  </div>
+  <form role="group">
+    <div id="info">
+      <fieldset>
+        <legend><big>Personal Info.</big></legend>
+        <label for="101"><b>Name</b>
+          <input type="text" id="101" placeholder="Aadi" />
+        </label>
+        <br><br>
+        <label for="99"><b>Gender</b></label>
+        <select name="gender" id="99">
+          <optgroup label="Select Gender">
+            <option value="" disabled>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </optgroup>
+        </select>
+        <br><br>
+        <label for="98"><b>Date of Birth</b>
+          <input type="date" id="98">
+        </label>
+        <br /><br />
+        <label for="102"><b>Email</b>
+          <input type="email" id="102" placeholder="e.g, loedex@yahoo.com" />
+        </label>
+        <br /><br />
+        <label for="103"><b>Phone</b></label>
+        <select name="phone">
+          <optgroup label="Country Codes">
+            <option value="" disabled selected>Select Country</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+91">🇮🇳 +91 (IND)</option>
+            <option value="+81">🇯🇵 +81 (Japan)</option>
+            <option value="+49">🇩🇪 +49 (GRM)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+            <option value="+971">🇦🇪 +971 (UAE)</option>
+            <option value="+92">🇵🇰 +92 (PAK)</option>
+            <option value="+970">🇵🇸 +970 (PLS)</option>
+            <option value="+966">🇸🇦 +966 (SA)</option>
+            <option value="+33">🇫🇷 France (+33)</option>
+            <option value="+39">🇮🇹 Italy (+39)</option>
+            <option value="+86">🇨🇳 China (+86)</option>
+          </optgroup>
+        </select>
+        <input type="tel" id="103" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br><br>
+        <br>
+      </fieldset>
+    </div>
+    <div id="Feedback">
+      <fieldset>
+        <legend><big>Feedback</big></legend>
+        <br>
+        <label for="201"><b>Food Quality: </b></label>
+        <select name="Quality" id="201">
+          <optgroup>
+            <option value="" disabled>Select Below</option>
+            <option value="1">Outstanding</option>
+            <option value="2">Average</option>
+            <option value="3">Satisfactory</option>
+            <option value="4">Unsatisfactory</option>
+            <option value="5">Terrible</option>
+          </optgroup>
+        </select>
+        <div id="price">
+          <p>◈ <big>Compared to similar offerings from other brands, how do you perceive our pricing ?</big></p>
+          <label for="l">
+            <input type="radio" id="l" value="1" name="R"> Much Lower</label>
+          <br>
+          <label for="sl">
+            <input type="radio" id="sl" value="2" name="R"> Slightly Lower </label>
+          <br>
+          <label for="ats">
+            <input type="radio" id="ats" value="3" name="R"> About the same</label>
+          <br>
+          <label for="sh">
+            <input type="radio" id="sh" value="4" name="R"> Slightly Higher</label>
+          <br>
+          <label for="mh">
+            <input type="radio" id="mh" value="5" name="R"> Much Higher</label>
+          <br>
+        </div>
+        <br>
+        <div id="PricingView">
+          <p>◈ <big>What factors most influenced your view of our pricing ?</big></p>
+          <label for="qos">
+            <input type="radio" id="qos" name="What"> Quality of Service</label>
+          <br>
+          <label for="br">
+            <input type="radio" id="br" name="What"> Brand Reputation
+          </label>
+          <br>
+          <label for="cp">
+            <input type="radio" id="cp" name="What"> Competitor Pricing
+          </label>
+          <br>
+          <label for="dap">
+            <input type="radio" id="dap" name="What"> Discounts and Promotions
+          </label>
+          <br>
+          <label for="o">
+            <input type="radio" id="o" name="What"> Other
+          </label>
+        </div>
+        <br><br>
+        <div id="cleanAndBehave">
+          <label for="202">Cleanliness: </label>
+          <select name="Clean" id="202">
+            <optgroup label="cleanstatus">
+              <option value="" disabled>Select Below</option>
+              <option value="1">Outstanding</option>
+              <option value="2">Average</option>
+              <option value="3">Satisfactory</option>
+              <option value="4">Unsatisfactory</option>
+              <option value="5">Terrible</option>
+            </optgroup>
+          </select>
+
+          <label for="203">Staff Behaviour: </label>
+          <select name="Behaviour" id="203">
+            <optgroup label="staffbehaviour">
+              <option value="">Choose</option>
+              <option value="1">Pleasant</option>
+              <option value="2">Friendly</option>
+              <option value="3">Calm</option>
+              <option value="4">Rude</option>
+            </optgroup>
+          </select>
+        </div>
+        <br>
+        <div id="visit">
+          <p>◈ <big>How often do you dine at our restaurant?</big></p>
+          <label for="fv">
+            <input type="radio" id="fv" value="0" name="visit"> This was my first visit
+          </label>
+          <br>
+          <label for="om">
+            <input type="radio" id="om" value="1" name="visit"> Once in a month
+          </label>
+          <br>
+          <label for="ow">
+            <input type="radio" id="ow" value="2" name="visit"> Once in a week
+          </label>
+          <br>
+          <label for="mw">
+            <input type="radio" id="mw" value="3" name="visit"> Multiple times in a week
+          </label>
+          <br>
+          <label for="rl">
+            <input type="radio" id="rl" value="4" name="visit"> Rarely
+          </label>
+          <br><br>
+          <p>◈ <big>Which of the following did you try?</big><small> - You can select Multiple</small></p>
+          <label for="s">
+            <input type="checkbox" id="s" name="Dish" value="st"> Starters
+          </label>
+          <br>
+          <label for="d">
+            <input type="checkbox" id="d" name="Dish" value="de"> Desserts
+          </label>
+          <br>
+          <label for="be">
+            <input type="checkbox" id="be" name="Dish" value="be"> Beverages
+          </label>
+          <br>
+          <label for="sd">
+            <input type="checkbox" id="sd" name="Dish" value="sod"> Specials of the Day
+          </label>
+          <br><br>
+          <p><big>What cuisine did you like most?</big><small> - You can select Multiple</small></p>
+          <label for="itl">
+            <input type="checkbox" id="itl" name="Cuisine" value="italian"> Italian
+          </label>
+          <label for="ch">
+            <input type="checkbox" id="ch" name="Cuisine" value="chinese"> Chinese
+          </label>
+          <label for="cont">
+            <input type="checkbox" id="cont" name="Cuisine" value="continental"> Continental
+          </label>
+          <br>
+          <label for="des">
+            <input type="checkbox" id="des" name="Cuisine" value="desi"> Desi / Traditional
+          </label>
+          <label for="oth">
+            <input type="checkbox" id="oth" name="Cuisine" value="other"> Others
+          </label>
+        </div>
+        <br>
+        <div id="experience">
+          <p>◈ <big>How was your Overall Experience ? Rate out of 5.</big></p>
+          <label for="ex">
+            <input type="radio" id="ex" name="EXP" value="1"> ★★★★★
+          </label>
+          <br>
+          <label for="g">
+            <input type="radio" id="g" name="EXP" value="2"> ★★★★
+          </label>
+          <br>
+          <label for="a">
+            <input type="radio" id="a" name="EXP" value="3"> ★★★
+          </label>
+          <br>
+          <label for="p">
+            <input type="radio" id="p" name="EXP" value="4"> ★★
+          </label>
+          <br>
+          <label for="vp">
+            <input type="radio" id="vp" name="EXP" value="5"> ★
+          </label>
+        </div>
+        <div id="textfeedback">
+          <p>📝 <big>What could we improve to make your next visit better ?</big></p>
+          <label for="txt">
+            <textarea name="Feedback" id="txt" cols="40" rows="5" required maxlength="1000" minlength="2"
+              placeholder="Write Here....✍️"></textarea>
+          </label>
+          <br><br>
+          <label for="con">
+            <input type="checkbox" id="con" name="chech" value="consent"> I agree to be contacted if needed for
+            follow-up
+          </label>
+          <br><br>
+          <input type="submit" value="Submit" onclick="alert('Submitted. Thank you for your time')">
+        </div>
+      </fieldset>
+    </div>
+  </form>
+  <div id="contact">
+    <footer>
+      <h4>Contact with us</h4>
+      <p>🌐 www.lintots.com.pk </p>
+      <p>✉ Lintotsrestaurant@gmail.com </p>
+      <p>📍 Lintot's Restaurant, Islamabad, Pakistan</p>
+    </footer>
+  </div>
+</body>
+
+</html>
